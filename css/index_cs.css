@@ -1,0 +1,394 @@
+@charset "utf-8";
+/* CSS Document */
+@media (min-width:1024px){
+section{
+	position:relative;
+	width:1180px;
+	height:774px;
+	margin: 0 auto;
+	margin-top:50px;
+	}
+#main_img{
+	width:100%;
+	height: 438px;
+	margin: 0 auto;}	
+
+#main_img>div.box_1{
+	width: 364px;
+	float: left;
+	margin-right: 33px;
+	
+}
+#main_img>.box_1>ul>li:nth-child(1){
+	
+	margin-bottom: 28px;
+	
+}
+
+#main_img>div.box_2{
+	width: 382px;
+	float: left;
+	
+}
+
+#main_img>div.box_3{
+	width: 364px;
+	float: right;
+	
+}
+
+#main_img>.box_3>ul>li:nth-child(1){
+	
+	margin-bottom: 15px;
+	
+}
+
+#fun_box{
+	width: 1230px;
+	margin: 0 auto;
+	margin-top: 35px;
+	}
+
+#K_service{
+	
+	width:371px;
+	height:306px;
+	float: left;
+	margin-right:28px;
+	}
+#K_service>#icon_box{
+	
+	width:371px;
+	height:266px;
+	padding-top:9px;
+	}
+#K_service h3{
+	font-size:11pt;
+	color:rgba(110,107,107,1.00);
+	position:absolute;}
+#K_service ul li{
+	float:right;}
+
+
+#Language{
+	background:url(../images/images/sec_bar.png) no-repeat left top;
+	width:409px;
+	height:186px;
+	float: left;
+	margin-top:21px;
+	
+}
+#Language h3{
+	display:none;}
+#Language ul li>a{
+	width:80%;
+	
+	
+	
+	}
+
+#Language ul li>a img{
+	text-align:left;
+	margin-top:40px;
+	}
+	
+#K_fullview{
+	float: left;
+	width:382px;
+	height:280px;
+	margin-top:21px;
+	margin-right:32px;}
+#K_fullview>h3{
+	display:none;}
+#K_fullview>div{
+	position: absolute;
+	width: 382px;
+	background: rgba(255,255,255,1.00);
+		}
+		
+#K_fullview>div:target{
+	z-index: 100;
+}
+		
+#K_fullview>div>h3{
+	position: absolute;
+	width: 70px;
+	border-top: 1px solid rgba(204,199,199,1.00);
+	border-left: 1px solid rgba(204,199,199,1.00);
+	border-right: 1px solid rgba(204,199,199,1.00);
+	top: -25px;
+	font-size:11pt;
+	padding-left:10px;
+	padding-bottom:5px;
+	background:rgba(220,220,220,1.00);
+}
+
+#K_fullview>div:target>h3{
+	background: rgba(255,255,255,1.00);
+	font-weight:bold;
+	border-top: 2px solid rgba(204,199,199,1.00);
+	border-left: 2px solid rgba(204,199,199,1.00);
+	border-right: 2px solid rgba(204,199,199,1.00);
+	
+	
+}
+
+#K_fullview>div:target>h3>a{
+	display: block;/* a에 영역을 지정해준다.*/
+	width: 70px;
+	color:rgba(69,69,69,1.00);
+}
+
+#K_fullview>div#K-POP>h3{
+	left: 82px;
+}
+
+#K_fullview>div#Drama>h3{
+	left: 243px;
+}
+
+#K_fullview>div#Movie>h3{
+	left: 163px;
+}
+
+#K_fullview>div ul{
+	width:382px;
+	height:251px;
+	border:2px solid rgba(204,199,199,1.00);
+		}
+#K_fullview>div ul li{
+	margin:10px;
+	font-size:11pt;
+	width:382px;
+	
+	}
+	
+#K_fullview>div ul li a{
+	position: relative;
+	display: block;
+	width: 382px;
+}
+		
+#K_fullview>div ul li a span.date{
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 50px;
+		}
+#K_fullview>div ul li a span.title{
+	}
+
+
+}
+/*----------------------------------테블릿 부분 시작*/
+@media (max-width:1023px){
+	body{
+		width: 100%;
+		min-width: 1023px;
+	}
+	
+#main_img{
+	
+	top:10px;
+	width:95%;
+	margin:0 auto;}	
+#main_img>div{
+	width:30%;
+	float: left;
+	margin:10px;
+	}
+#main_img>div:after{
+	content:"";
+	display:block;
+	clear:both;
+	}
+#main_img>.box_1>ul>li:nth-child(1){
+	
+	margin-bottom: 3px;
+	
+}
+
+#main_img>.box_1>ul>li:nth-child(3){
+	
+	
+}
+#fun_box{
+	position:relative;
+	width:95%;
+	
+	margin: 0 auto;}
+#K_service{
+	position:relative;
+	width:95%;
+
+}
+#K_service h3{
+	position:relative;
+	width:100%;
+	margin-left:10px;
+	
+	padding-bottom:4px;
+	background:url(../images/images/s_under.jpg) no-repeat left bottom;
+	color:#2D0C2C;
+	font-size:11pt;
+		
+	}
+#K_service h3>a{
+	display:block;
+	}
+#icon_box{
+	
+	width:100%;
+	margin-top:35px;
+	
+	}
+/*#icon_box ul li:after{
+	 content:"";
+	 display:block;
+	 clear:both;
+	 }	*/
+#icon_box ul li{
+	float:right;
+	width:16.6%;
+	
+	
+	}
+#K_fullview{
+	position:relative;
+	width:50%;
+	height:370px;
+	float: left;
+	top:60px;
+	
+	}
+#K_fullview:after{
+	content:"";
+	display:block;
+	clear:both;
+	}
+#K_fullview>h3{
+	position:relative;
+	width:40%;
+	padding-bottom:4px;
+	background:url(../images/images/s_under.jpg) no-repeat left bottom;
+	color:#2D0C2C;
+	font-size:11pt;
+	}
+	
+#K_fullview>div{
+	position:absolute;
+	width:90%;
+	top: 80px;
+	background:#FFFFFF;
+	
+	
+	
+	
+	}
+#K_fullview>div:target{
+	z-index: 100;
+}
+#K_fullview>div>h3{
+	position: absolute;
+	top: -28px;
+	border-top: 1px solid rgba(204,199,199,1.00);
+	border-left: 1px solid rgba(204,199,199,1.00);
+	border-right: 1px solid rgba(204,199,199,1.00);
+	background:#E3E1E1;
+	font-size:10pt;
+	color:#686767;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:12px;
+	width:70px;}
+#K_fullview>div:target>h3{
+	background: rgba(255,255,255,1.00);
+	font-weight:bold;
+	border-top: 2px solid rgba(204,199,199,1.00);
+	border-left: 2px solid rgba(204,199,199,1.00);
+	border-right: 2px solid rgba(204,199,199,1.00);
+	
+	
+}
+
+#K_fullview>div:target>h3>a{
+	display: block;/* a에 영역을 지정해준다.*/
+	width: 83px;
+	color:rgba(69,69,69,1.00);
+}
+
+/*#K_fullview div h3>a{
+	display:block;
+	width:px;}*/
+#K_fullview>div#K-POP>h3{
+	margin-left:83px;}
+#K_fullview>div#Movie>h3{
+	margin-left:166px;}
+#K_fullview>div#Drama>h3{
+	margin-left:249px;}
+#K_fullview>div ul{
+	width:100%;
+	height:251px;
+	border:2px solid rgba(204,199,199,1.00);
+	
+	}
+#K_fullview>div ul li{
+     margin:10px;
+	font-size:11pt;
+	width:100%;
+	}
+#K_fullview>div ul li a{
+	position: relative;
+	display: block;
+	width:100%;}
+		
+#K_fullview>div ul li a span.date{
+	
+	position: absolute;
+	top: 0;
+	right: 10px;
+	text-align:right;
+	
+	text-align:right;
+			}
+
+
+	
+
+#Language{
+	position:relative;
+	width:50%;
+	height: 380px;
+	float: right;
+	top:60px;
+	margin-bottom:80px;
+}
+#Language:after{
+	content:"";
+	display:block;
+	clear:both;
+	}
+
+#Language>h3{
+	
+	width:40%;
+	
+	padding-bottom:5px;
+	background:url(../images/images/s_under.jpg) no-repeat left bottom;
+	color:#2D0C2C;
+	font-size:11pt;
+	}
+#Language ul li>a{
+	width:40%;
+		
+	}
+
+#Language ul li>a img{
+	text-align:left;
+	margin-top:59px;
+	}
+
+	
+	
+	
+	}

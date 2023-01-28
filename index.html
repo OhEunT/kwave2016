@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<title>Untitled Document</title>
+<link type="text/css" rel="stylesheet" href="css/reset.css">
+<link type="text/css" rel="stylesheet" href="css/commom.css">
+<link type="text/css" rel="stylesheet" href="css/index_cs.css">
+</head>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+
+$(document).ready(function(e) {
+	var allh=$(document).height();
+	//console.log(allh);
+    $(window).scroll(function(e) {
+		var t=$(window).scrollTop();
+		//console.log(t);
+		if(allh>t) {
+        $('#section_nav').animate({
+			top:t+100
+		},1);
+		}
+    });
+});
+</script>
+
+
+<body>
+
+<header>
+ <h1><img src="images/images/logo.png" alt="로고"/></h1>
+  <nav id="header_nav">
+   <ul>
+    <li><a href="html/story.html">케이웨이브 소개<span class="down">Introduction</span></a>
+           
+    </li>
+    
+    <li><a href="html/business_02.html">케이웨이브 계열사<span class="down">Subsidiaries</span></a>
+       
+     </li>
+    
+    <li><a href="html/business.html">케이웨이브 사업분야<span class="down">Business</span></a>
+           
+    </li>
+    
+    <li><a href="html/job.html">인재채용<span class="down">Jobs</span></a>
+           
+    </li>
+    
+    <li><a href="html/introduction.html">CI소개<span class="down">Company <br/>Identity</span></a>
+           
+    </li>
+    
+   </ul>
+  </nav>
+</header>
+<!--------------------------------------------공통부분 끄읕----->
+
+ <nav id="section_nav">
+   <ul>
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">SITEMAP</a></li>
+    <li><a href="#">CONTACT US</a></li>
+   </ul>
+ </nav>
+ 
+ <!--  <div id="bg3">
+     <ul>
+     <li><img src="images/bg_01.png"></li>
+     <li><img src="images/bg_02.png"></li>
+     <li><img src="images/bg_03.png"></li>
+     </ul>
+   </div>-->
+<section>
+ <div id="main_img">
+  <div class="box_1">
+   <ul>
+    <li><img src="images/images/v.jpg" alt="사진"></li>
+    <li><img src="images/images/2.png" alt="사진"></li>
+   </ul>
+  </div>
+  
+  <div class="box_2"><img src="images/images/m_1.png" alt="사진"></div>
+  
+  <div class="box_3">
+   <ul>
+    <li><img src="images/images/v3.jpg" alt="사진"></li>
+    <li><img src="images/images/v1.jpg" alt="사진"></li>
+   </ul>
+  </div>
+  
+ </div>
+    <!----------------------------------케이웨이브 서비스 시작-----> 
+ <div id="fun_box">
+  <div id="K_service">
+   <h3>케이웨이브 서비스</h3>
+    <div id="icon_box">
+     <ul>
+      <li><a href="#"><img src="images/images/nearest.gif" alt="내주변장소"/></a></li>
+      <li><a href="#"><img src="images/images/museum.gif" alt="박물관"/></a></li>
+      <li><a href="#"><img src="images/images/tranditional.gif" alt="문화유산탐사"/></a></li>
+      <li><a href="#"><img src="images/images/festival.png" alt="축제"/></a></li>
+      <li><a href="#"><img src="images/images/news.gif" alt="소식"/></a></li>
+      <li><a href="#"><img src="images/images/performance.gif" alt="공연"/></a></li>
+     </ul>
+    </div>
+  </div>
+   <!----------------------------------전체보기 시작-----> 
+ <div id="K_fullview">
+  <h3>CONTENTS</h3>
+  <div id="full">
+   <h3><a href="#full">전체보기</a></h3>
+   <ul id='full_s'>
+    <li><a href="#"><span class="title">[K-POP] 빅뱅(Bigbang) - Tonight</span><span class="date">[2014-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[K-POP] 빅뱅(Bigbang) - LOVE SONG </span><span class="date">[2015-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[Movie] 아빠를 빌려드립니다.</span><span class="date">[2015-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[Drama] 내일도 칸타빌레</span><span class="date">[2014-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[Drama] 미생</span><span class="date">[2015-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[K-POP] 2NE1 - ToAnyone  </span><span class="date">[2014-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[Movie] 귀향</span><span class="date">[2016-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[Movie] 히야</span><span class="date">[2016-03-10]</span></a></li>
+  </ul>
+ </div>
+ 
+ <div id="K-POP">
+   <h3><a href="#K-POP">K-POP</a></h3>
+   <ul class="K-POP_s">
+    <li><a href="#"><span class="title">[K-POP] 피에스타 - Mirror </span><span class="date">[2016-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[K-POP] 이하이 - 한숨 </span><span class="date">[2016-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[K-POP] 영혼없이 말하지마 - 미스에스</span><span class="date">[2016-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[K-POP] 넌 is 뭔들 - 마마무</span><span class="date">[2016-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[K-POP] 사랑 - 다비치</span><span class="date">[2016-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[K-POP] 2NE1 - ToAnyone  </span><span class="date">[2016-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[K-POP] 시간을 달려서 - 여자친구</span><span class="date">[2016-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[K-POP] OHH-AHH - 트와이스</span><span class="date">[2016-03-10]</span></a></li>
+  </ul>
+ </div>
+ 
+ 
+  <div id="Movie">
+  <h3><a href="#Movie">Movie</a></h3>
+   <ul class="Movie_s">
+    <li><a href="#"><span class="title">[Movie] 귀향</span><span class="date">[2016-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[Movie] 널 기다리며 </span><span class="date">[2016-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[Movie] 히야</span><span class="date">[2016-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[Movie] 동주</span><span class="date">[2015-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[Movie] 미생</span><span class="date">[2015-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[Movie] 동주 </span><span class="date">[2015-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[Movie] 엽문</span><span class="date">[2015-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[Movie] 카트</span><span class="date">[2014-03-10]</span></a></li>
+  </ul>
+ </div>
+ 
+ 
+  <div id="Drama">
+  <h3><a href="#Drama">Drama</a></h3>
+   <ul>
+    <li><a href="#"><span class="title">[Drama] 연애시대</span><span class="date">[2016-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[Drama] 추노 </span><span class="date">[2016-02-10]</span></a></li>
+    <li><a href="#"><span class="title">[Drama] 너의 목소리가 들려</span><span class="date">[2016-03-10]</span></a></li>
+    <li><a href="#"><span class="title">[Drama] 신사의 품격</span><span class="date">[2016-01-10]</span></a></li>
+    <li><a href="#"><span class="title">[Drama] 미생</span><span class="date">[2015-12-10]</span></a></li>
+    <li><a href="#"><span class="title">[Drama] 굿바이 솔로</span><span class="date">[2015-09-10]</span></a></li>
+    <li><a href="#"><span class="title">[Drama] 추적자</span><span class="date">[2014-04-10]</span></a></li>
+    <li><a href="#"><span class="title">[Drama] 보스를 지켜라</span><span class="date">[2014-01-10]</span></a></li>
+  </ul>
+ </div>
+</div>
+      <!----------------------------------전체보기 끝-----> 
+      
+      
+  <div id="Language">
+  <h3>LANGUAGE</h3>
+   <ul>
+    <li><a href="#"><img src="images/images/europe.png" alt="europe middle east and agrica"/></a></li>
+    <li><a href="#"><img src="images/images/kwave웹_35.png" alt="Asia Pacific"/></a></li>
+    <li><a href="#"><img src="images/images/common.png" alt="Commonwealth of Independent States"/></a></li>
+    <li><a href="#"><img src="images/images/ameri.png" alt="Anericas"/></a></li>
+   </ul>
+  </div>
+ </div>
+</section>
+<!--------------------------------------------푸터시작----->
+<footer>
+
+    <div class="footer">
+      <div id="footer_logo">
+       <img src="images/images/footerlogo.png" alt="로고"/>
+      </div>
+      <div class="P-2">
+        <p>법적고지/개인정보 보호정책/개인정보 처리방침/찾아오시는 길/사이트맵/고객의 소리</p>
+        <p>경기도 광주시 케이웨이브로11, 케이웨이브 타워 TEL.123-456-0000</p>
+        <small class="copy">Copyright &copy; 2015 K-wave</small>
+      </div>
+      <select>
+        <option>-Family Site-</option>
+        <option>-****1 Site-</option>
+        <option>-****2 Site-</option>
+        <option>-****3 Site-</option>
+        <option>-****4 Site-</option>
+        <option>-****5 Site-</option>
+      </select>
+     
+    </div>
+
+</footer>
+</body>
+</html>

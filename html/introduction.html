@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<title>Untitled Document</title>
+<link type="text/css" rel="stylesheet" href="../css/reset.css">
+<link type="text/css" rel="stylesheet" href="../css/commom.css">
+<link type="text/css" rel="stylesheet" href="../css/intro.css">
+</head>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script>
+
+$(document).ready(function(e) {
+	var allh=$(document).height();
+	//console.log(allh);
+    $(window).scroll(function(e) {
+		var t=$(window).scrollTop();
+		//console.log(t);
+		if(allh>t) {
+        $('#section_nav').animate({
+			top:t+100
+		},1);
+		}
+    });
+});
+</script>
+
+
+<body>
+
+<header>
+ <h1><img src="../images/images/logo.png" alt="로고"/></a></h1>
+  <nav id="header_nav">
+    <ul>
+    <li><a href="story.html">케이웨이브 소개<span class="down">Introduction</span></a>
+           
+    </li>
+    
+    <li><a href="business_02.html">케이웨이브 계열사<span class="down">Subsidiaries</span></a>
+       
+     </li>
+    
+    <li><a href="business.html">케이웨이브 사업분야<span class="down">Business</span></a>
+           
+    </li>
+    
+    <li><a href="job.html">인재채용<span class="down">Jobs</span></a>
+           
+    </li>
+    
+    <li><a href="introduction.html">CI소개<span class="down">Company <br/>Identity</span></a>
+           
+    </li>
+    
+   </ul>
+  </nav>
+</header>
+<!--------------------------------------------공통부분 끄읕----->
+ 
+ 
+<div id="m_box">
+  <h2><img src="../images/images/basic_h2.png" alt="베이직 시스템"></h2>
+  <p id="big_logo"><img src="../images/images/basic_logo.png" alt="로고"></p>
+  <h4>Concet</h4>
+  <p>  K-wave의 K는 KOREA를 상징, 파동처럼 널리 확산되라는 의미로 wave를 사용 하였다.<br/>
+      로고에서 한국의 기왓장, 한복 등 아름다움의 상징인 곡선을 로고에 담아 표현하였고 <br/>
+      곡선안에 한국의 다채로운 색동색으로 생기를 불어 넣고 곡선에 담아 시각적으로 단아함을 담았다.<br/>
+      또한 색동색은 케이웨이브의 상징성을 각각의색상에 담았다.<br/>
+      ex)분홍색(뷰티), 노란색(방송), 파란색(음악),보라색(패션)</p>
+    <ul>
+      <li><img src="../images/images/wordmark.png"></li>
+      <li><img src="../images/images/wordmark_grid.png"></li>
+      <li><img src="../images/images/color.png"></li>
+      <li><img src="../images/images/color_sub.png"></li>
+    </ul>
+
+</div>
+    <!----------------------------------케이웨이브 서비스 시작-----> 
+
+   
+<!--------------------------------------------푸터시작----->
+<footer>
+
+    <div class="footer">
+      <div id="footer_logo">
+       <img src="../images/images/footerlogo.png" alt="로고"/>
+      </div>
+      <div class="P-2">
+        <p>법적고지/개인정보 보호정책/개인정보 처리방침/찾아오시는 길/사이트맵/고객의 소리</p>
+        <p>경기도 광주시 케이웨이브로11, 케이웨이브 타워 TEL.123-456-0000</p>
+        <small class="copy">Copyright &copy; 2015 K-wave</small>
+      </div>
+      <select>
+        <option>-Family Site-</option>
+        <option>-****1 Site-</option>
+        <option>-****2 Site-</option>
+        <option>-****3 Site-</option>
+        <option>-****4 Site-</option>
+        <option>-****5 Site-</option>
+      </select>
+     
+    </div>
+
+</footer>
+</body>
+</html>

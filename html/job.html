@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<title>Untitled Document</title>
+<link type="text/css" rel="stylesheet" href="../css/reset.css">
+<link type="text/css" rel="stylesheet" href="../css/commom.css">
+<link type="text/css" rel="stylesheet" href="../css/job.css">
+<link type="text/css" rel="stylesheet" href="../css/layout.css">
+</head>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script>
+
+$(document).ready(function(e) {
+		
+		$('#m_box>ul>li>ul').hide();
+	$('#m_box>ul>li>a').click(function(){
+		$('#m_box>ul>li>a').removeClass('on');
+		$('#m_box>ul>li>ul').slideUp('fast');
+		 $(this).next().slideDown('fast');
+		 $(this).addClass('on');
+	});
+	
+	$('.depth2').hide();
+	$('.lnb').click(function(){
+		$('.lnb').removeClass('on');
+		$('.depth2').slideUp('fast');
+		 $(this).next().slideDown('fast');
+		 $(this).addClass('on');
+	});
+	
+});
+</script>
+
+
+<body>
+
+<header>
+ <h1><a href="../index.html"><img src="../images/images/logo.png" alt="로고"/></a></h1>
+  <nav id="header_nav">
+    <ul>
+    <li><a href="story.html">케이웨이브 소개<span class="down">Introduction</span></a>
+           
+    </li>
+    
+    <li><a href="business_02.html">케이웨이브 계열사<span class="down">Subsidiaries</span></a>
+       
+     </li>
+    
+    <li><a href="business.html">케이웨이브 사업분야<span class="down">Business</span></a>
+           
+    </li>
+    
+    <li><a href="job.html">인재채용<span class="down">Jobs</span></a>
+           
+    </li>
+    
+    <li><a href="introduction.html">CI소개<span class="down">Company <br/>Identity</span></a>
+           
+    </li>
+    
+   </ul>
+  </nav>
+</header>
+<!--------------------------------------------공통부분 끄읕----->
+  <div id="m_box">
+      <h2><img src="../images/images/job_t01.png" alt="케이웨이브 소개"/></h2>
+       
+        <div class="title_box">
+           <h4>인재상</h4>
+            <p><span>  K-waves는 학력, 성별, 국적, 종교를 차별하지 않고</span>
+               <span>미래를 이끌어 나갈 인재와 함께 합니다.</span></p>
+        </div>
+        
+             <p id="round"><img src="../images/images/map01.png" alt="인재상"></p>
+             
+          
+          
+         
+        <div class="title_box">
+           <h4>채용제도 안내</h4>
+            <p><span>K-waves는 학력, 성별, 국적, 종교를 차별하지 않고</span>
+             <span>미래를 이끌어 나갈 인재와 함께 합니다.</span></p>
+        </div>
+        
+             <p id="do"><img src="../images/images/map02.png" alt="채용제도 안내"></p>
+             
+        
+ 
+  </div>
+     <!----------------------------------다운메뉴 시작-----> 
+    <div id="wrapper">
+	<div id="middle">
+		<div id="left">
+			<div id="leftMenu">
+				<div id="leftTitle">인재채용</div>
+				<div id="subMenu">
+                
+                
+        <ul>
+            <li><a href="#none" id="left0" class="lnb">분야별 <span>Field</span></a>
+              <ul class="depth2">
+               <li><a href="#">뷰티</a></li>
+               <li><a href="#">음악</a></li>
+               <li><a href="#">방송</a></li>
+               <li><a href="#">패션</a></li>
+              </ul>
+            </li>
+            
+            <li><a href="#none" id="left1" class="lnb">지역별 <span>Area</span></a>
+              <ul class="depth2">
+               <li><a href="#">유럽</a></li>
+               <li><a href="#">아시아</a></li>
+               <li><a href="#">아프리카</a></li>
+               <li><a href="#">아메리카</a></li>
+              </ul>
+            </li>
+            
+            <li><a href="#none" id="left2" class="lnb">전체채용<span>All</span></a>
+            
+            </li>
+            
+           </ul>
+        </div>     </div>     </div>     </div>     </div>
+
+   
+<!--------------------------------------------푸터시작----->
+<footer>
+
+    <div class="footer">
+      <div id="footer_logo">
+       <img src="../images/images/footerlogo.png" alt="로고"/>
+      </div>
+      <div class="P-2">
+        <p>법적고지/개인정보 보호정책/개인정보 처리방침/찾아오시는 길/사이트맵/고객의 소리</p>
+        <p>경기도 광주시 케이웨이브로11, 케이웨이브 타워 TEL.123-456-0000</p>
+        <small class="copy">Copyright &copy; 2015 K-wave</small>
+      </div>
+      <select>
+        <option>-Family Site-</option>
+        <option>-****1 Site-</option>
+        <option>-****2 Site-</option>
+        <option>-****3 Site-</option>
+        <option>-****4 Site-</option>
+        <option>-****5 Site-</option>
+      </select>
+     
+    </div>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,331 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (min-width:1024px){
+	
+body{
+	width:100%;
+	background: url(../images/bg_01.png) no-repeat 0 120px, url(../images/bg_02.png) no-repeat center center, url(../images/bg_03.png) no-repeat right bottom;
+}
+
+#bg3{
+	
+	}
+#bg3>ul{
+	position:absolute;
+	width:100%;
+	height:900px;;
+	z-index:-100;
+	}
+#bg3>ul>li{
+	 width:349px;
+	 position:static;
+	}
+#bg3>ul>li:nth-child(1){
+	margin-top:150px;
+	margin-left:-50px;
+	
+	}
+#bg3>ul>li:nth-child(2){
+	margin-top:50px;
+	right:0px;
+		}
+#bg3>ul>li:nth-child(3){
+	position:absolute;
+	margin-top:50px;
+    text-align:right;
+		}
+		
+		
+header{
+	position:relative;
+	width: 100%;
+	height:85px;
+	margin: 0 auto;}
+	
+header>h1{
+	position: absolute;
+	top:30px;
+	left: 40px;
+	width:165px;
+	
+}   
+   
+ #header_nav{
+	 width: 1198px;
+	 background:url(../images/images/h_bg.gif) no-repeat;
+	 margin: 0 auto;
+	 
+}
+
+ #header_nav>ul{
+	 width: 80%;	 
+	 margin: 0 auto;
+ }
+	 
+ #header_nav>ul>li{
+	 float:left;
+	 width:20%;
+	 text-align:center;
+	 margin-top:30px;
+	 
+	 }
+ #header_nav>ul>li:nth-child(1)>a{
+	 color:#90428A;
+	 font-family:"나눔바른고딕";
+	 
+	 }
+ #header_nav>ul>li:nth-child(2)>a{
+	 color:#417D2B;
+	 font-family:"나눔바른고딕";
+	 }	
+ #header_nav>ul>li:nth-child(3)>a{
+	 color:#885A18;
+	 font-family:"나눔바른고딕";
+	 }	
+ #header_nav>ul>li:nth-child(4)>a{
+	 color:#121E5C;
+	 font-family:"나눔바른고딕";
+	 }	
+ #header_nav>ul>li:nth-child(5)>a{
+	 color:#5A295F;
+	 font-family:"
+	 ";
+	 
+	 }	
+	 
+ #header_nav>ul>li>a{
+	  float:left;
+	  width:100%;
+	  height:20%;
+	  
+	  
+	  }
+ #header_nav:after{
+	 content:"";
+	 display:block;
+	 clear:both;
+	 }
+   
+#header_nav>ul>li>a>span{
+	 
+	 display:block;
+	 font-size:12pt;
+	 color:rgba(175,173,173,1.00);
+	 font-family:"DIN 1451 Mittelschrift Alt";
+	 padding-top:5px;}
+
+	
+#header_nav>ul>li>ul{
+		position:absolute;
+		z-index:30;
+		margin-top:50px;
+		display:none;
+		}
+#header_nav ul li>a:hover{
+	font-weight:bold;}
+		
+#section_nav{
+	background:url(../images/images/s_nav_bar_07.png) no-repeat right;
+	position:absolute;
+	margin-top:51px;
+	margin-left:5%;
+	width:124px;
+	height:201px;
+	z-index:50;}
+#section_nav ul li{
+	text-align:right;
+	padding-right:15px;
+	padding-bottom:12px;
+	font-size:10pt;
+	}
+
+	
+	
+.footer{
+	background: url(../images/images/footerbg.png) #ede8e4 no-repeat;
+	position: relative;
+	margin: 0 auto;
+	width:1198px;
+	height:92px;
+	}
+#footer_logo img{
+	position:absolute;
+	margin:30px;
+	left:30px;
+	}
+.footer:after{
+	content:'';
+	display:block;
+	clear:both;}
+.footer>div{
+	float:left;
+	
+	color:#999;
+	margin: 10px 80px;}
+.footer>div>p{
+	font-size:10pt;
+	font-family:'NGothic', Gulim;
+	color:#755867;
+	margin-left:90px;}
+.footer>select{
+	
+	left:350px;
+	width:150px;}
+.copy{
+	margin-left:90px;}
+
+}
+	
+/*---------------------------------------------테블릿---------------------*/
+@media (max-width:1023px){
+
+body{
+	width:100%;
+}
+header{
+	 background:url(../images/images/h_bg.gif) no-repeat ;
+	position:relative;
+	width: 100%;
+	height:200px;
+	margin: 0 auto;
+	}
+	
+header>h1{
+	left: 40px;
+	width:165px;
+	margin: 0 auto;
+		
+} 
+header>h1 img{
+	padding-top:15px;}  
+ #header_nav{
+	 width: 100%;
+	 margin: 0 auto;
+	 
+}
+
+ #header_nav>ul{
+	 width: 100%;	 
+	 margin: 0 auto;
+	
+ }
+	 
+ #header_nav>ul>li{
+	 float:left;
+	 width:20%;
+	 text-align:center;
+	 margin-top:30px;
+	 
+	 
+	 }
+ #header_nav>ul>li:nth-child(1)>a{
+	 color:#90428A;
+	 font-family:"나눔바른고딕";
+	 }
+ #header_nav>ul>li:nth-child(2)>a{
+	 color:#417D2B;
+	 font-family:"나눔바른고딕";
+	 }	
+ #header_nav>ul>li:nth-child(3)>a{
+	 color:#885A18;
+	 font-family:"나눔바른고딕";
+	 }	
+ #header_nav>ul>li:nth-child(4)>a{
+	 color:#121E5C;
+	 font-family:"나눔바른고딕";
+	 }	
+ #header_nav>ul>li:nth-child(5)>a{
+	 color:#5A295F;
+	 font-family:"
+	 ";
+	 
+	 }	
+	 
+ #header_nav>ul>li>a{
+	  float:left;
+	  width:100%;
+	  height:20%;
+	  
+	  
+	  }
+ #header_nav:after{
+	 content:"";
+	 display:block;
+	 clear:both;
+	 }
+   
+#header_nav>ul>li>a>span{
+	 
+	 display:block;
+	 font-size:11pt;
+	 color:rgba(175,173,173,1.00);
+	 font-family:"DIN 1451 Mittelschrift Alt";
+	 padding-top:5px;}
+
+	
+#header_nav>ul>li>ul{
+		position:absolute;
+		z-index:30;
+		margin-top:50px;
+		display:none;
+		}
+#header_nav ul li>a:hover{
+	font-weight:bold;}
+#section_nav{
+	background:url(../images/images/s_nav_bar_07.png) no-repeat right;
+	position:absolute;
+	margin-top:-60px;
+	margin-left:5%;
+	width:124px;	
+	z-index:50;
+	display:none;}
+#section_nav ul li{
+	text-align:right;
+	padding-right:15px;
+	padding-bottom:12px;
+	font-size:10pt;
+	}
+
+
+
+footer>div.footer{	
+    background: #E7E1D5 url(../images/images/footerbg.png) no-repeat;
+	position: relative;
+	margin: 0 auto;
+	width:100%;
+	height: 100px;
+	bottom:0px;
+	clear: both;
+	
+	}
+#footer_logo img{
+	position:absolute;
+	width:75px;
+	height:25px;
+	margin:30px;
+	left:30px;
+	
+	}*/
+
+.footer>div{
+	width:100%
+	}
+
+.footer .P-2{
+	position: absolute;
+	top: 10px;
+	left: 200px;
+	padding:20px;
+	font-size:10pt;
+	font-family:'NGothic', Gulim;
+	color:#755867;}
+.footer select{
+	position:absolute;
+	top: 30px;
+	right: 20px;
+	width:150px;}
+.copy{
+	margin-left:180px;
+	margin-top:10px;}
+}

@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<title>Untitled Document</title>
+<link type="text/css" rel="stylesheet" href="../css/reset.css">
+<link type="text/css" rel="stylesheet" href="../css/commom.css">
+<link type="text/css" rel="stylesheet" href="../css/business_02.css">
+<link type="text/css" rel="stylesheet" href="../css/layout.css">
+</head>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script>
+
+$(document).ready(function(e) {
+	var allh=$(document).height();
+	//console.log(allh);
+    $(window).scroll(function(e) {
+		var t=$(window).scrollTop();
+		//console.log(t);
+		if(allh>t) {
+        $('#section_nav').animate({
+			top:t+100
+		},1);
+		}
+    });
+
+	
+		$('#m_box>ul>li>ul').hide();
+	$('#m_box>ul>li>a').click(function(){
+		$('#m_box>ul>li>a').removeClass('on');
+		$('#m_box>ul>li>ul').slideUp('fast');
+		 $(this).next().slideDown('fast');
+		 $(this).addClass('on');
+	});
+	
+	$('.depth2').hide();
+	$('.lnb').click(function(){
+		$('.lnb').removeClass('on');
+		$('.depth2').slideUp('fast');
+		 $(this).next().slideDown('fast');
+		 $(this).addClass('on');
+	});
+	
+	
+});
+</script>
+
+
+<body>
+
+<header>
+ <h1><a href="../index.html"><img src="../images/images/logo.png" alt="로고"/></a></h1>
+  <nav id="header_nav">
+   <ul>
+    <li><a href="story.html">케이웨이브 소개<span class="down">Introduction</span></a>
+           
+    </li>
+    
+    <li><a href="business_02.html">케이웨이브 계열사<span class="down">Subsidiaries</span></a>
+       
+     </li>
+    
+    <li><a href="business.html">케이웨이브 사업분야<span class="down">Business</span></a>
+           
+    </li>
+    
+    <li><a href="job.html">인재채용<span class="down">Jobs</span></a>
+           
+    </li>
+    
+    <li><a href="introduction.html">CI소개<span class="down">Company <br/>Identity</span></a>
+           
+    </li>
+    
+   </ul>
+  </nav>
+</header>
+<!--------------------------------------------공통부분 끄읕----->
+  <div id="m_box">
+      <h2><img src="../images/images/story_t02.png" alt="케이웨이브 소개"/></h2>
+       
+        <div class="title_box">
+           <h4>해외 사업장</h4>
+           <p>세계 곳곳에 진출한 케이웨이브 사업장 현황</p>
+        </div>
+        
+             <p id="round"><img src="../images/images/map.png" alt="인재상"></p>
+             
+          
+          
+         
+        <div class="title_box">
+           <h4>위치찾기</h4>
+            <p>세계 곳곳에 위치한 케이웨이브 사업장</p>
+        </div>
+            
+            
+            <ul>
+             <li><a href="#"><img src="../images/images/find_01.png" alt="계열사별"></a>
+              <ul>
+                 <li><a href="#">뷰티</a></li>
+                 <li><a href="#">음악</a></li>
+                 <li><a href="#">방송</a></li>
+                 <li><a href="#">패션</a></li>
+              </ul>
+             </li>
+             
+             
+              <li><a href="#"><img src="../images/images/find_02.png" alt="지역별"></a>
+              <ul>
+                 <li><a href="#">유럽</a></li>
+                 <li><a href="#">아시아,오세아니아</a></li>
+                 <li><a href="#">아프리카</a></li>
+                 <li><a href="#">아메리카</a></li>
+              </ul>
+             </li>
+             
+                   <li><a href="#"><img src="../images/images/find_032.png" alt="나라별"></a>
+              <ul>
+                 <li><a href="#">Austria</a></li>
+                 <li><a href="#">Azerbaijan</a></li>
+                 <li><a href="#">Brazil</a></li>
+                 <li><a href="#">Canada</a></li>
+                 <li><a href="#">Chile</a></li>
+                 <li><a href="#">Egypt</a></li>
+                 <li><a href="#">Finland</a></li>
+                 <li><a href="#">Ghana</a></li>
+                 <li><a href="#">Greece</a></li>
+                 <li><a href="#">japan</a></li>
+               </ul>
+             </li>
+             
+            </ul>
+          
+             
+        
+ 
+  </div>
+    <!----------------------------------다운메뉴 시작-----> 
+    <div id="wrapper">
+	<div id="middle">
+		<div id="left">
+			<div id="leftMenu">
+				<div id="leftTitle">케이웨이브 계열사</div>
+				<div id="subMenu">
+                
+                
+        <ul>
+            <li><a href="#none" id="left0" class="lnb">해외 사업장   <span>Overseas</span></a>
+              <ul class="depth2">
+               <li><a href="#">분야별</a></li>
+               <li><a href="#">지역별</a></li>
+            </ul>
+            </li>
+            
+            <li><a href="#none" id="left1" class="lnb">국내사업장    <span>Domestic</span></a>
+              <ul class="depth2">
+                 <li><a href="#">분야별</a></li>
+                 <li><a href="#">지역별</a></li>
+              </ul>
+            </li>
+            
+            <li><a href="#none" id="left2" class="lnb">전체보기<span>ALL</span></a>
+            </li>
+            
+           </ul>
+        </div>
+        
+        
+        
+     				</div>
+			</div>
+		</div>
+	</div>
+</div>
+   
+<!--------------------------------------------푸터시작----->
+<footer>
+
+    <div class="footer">
+      <div id="footer_logo">
+       <img src="../images/images/footerlogo.png" alt="로고"/>
+      </div>
+      <div class="P-2">
+        <p>법적고지/개인정보 보호정책/개인정보 처리방침/찾아오시는 길/사이트맵/고객의 소리</p>
+        <p>경기도 광주시 케이웨이브로11, 케이웨이브 타워 TEL.123-456-0000</p>
+        <small class="copy">Copyright &copy; 2015 K-wave</small>
+      </div>
+      <select>
+        <option>-Family Site-</option>
+        <option>-****1 Site-</option>
+        <option>-****2 Site-</option>
+        <option>-****3 Site-</option>
+        <option>-****4 Site-</option>
+        <option>-****5 Site-</option>
+      </select>
+     
+    </div>
+
+</footer>
+</body>
+</html>

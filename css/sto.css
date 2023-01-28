@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+#m_box{
+	width:664px;
+	height:1108px;
+	margin: 0 auto;}
+
+#m_box>h2{
+	margin-bottom:30px;
+	margin-top:120px;}
+#m_box>h4{
+	color:#603813;
+	margin-left:15px;;
+	padding-bottom:40px;
+	margin-top:25px;
+	font-family:"-윤고딕330";}
+	
+#m_box>p{
+	margin-right:5px;
+	font-size:9.5pt;
+	font-weight:bold;
+	color:rgba(61,60,60,1.00);
+	padding:0px 30px 50px;}
+#m_box>ul#int_1{
+	width:600px;
+	height:100px;
+	margin: 0 auto;}
+#m_box>ul#int_1>li{
+	float:left;
+	width:30%;
+	margin-right:20px;}
+#m_box>ul#int_1>li>span{
+	display:block;
+	font-size:9pt;
+	text-align:center;
+	padding-top:10px;
+	font-weight:bold;
+	color:rgba(81,79,79,1.00);}
+#m_box>ul#int_2{
+	width:520px;
+	height:250px;
+	margin: 0 auto;}
+#m_box>ul#int_2>li{
+	display:inline-block;
+	padding:25px;
+	}
